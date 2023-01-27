@@ -240,7 +240,7 @@ pokemon_silhoettes = {
 23: "Whos_That_Pokemon-main\Pokemon Silhouettes\Ekans-s.png",
 24: "Whos_That_Pokemon-main\Pokemon Silhouettes\Arbok-s.png",
 25: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Pikachu-s.png",
-26: "Whos_That_Pokemon-main\Pokemon Silhouettes\Raichu-s.png",
+26: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Raichu-s.png",
 27: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Sandshrew-s.png",
 28: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Sandslash-s.png",
 29: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\FNidoran-s.png",
@@ -312,8 +312,8 @@ pokemon_silhoettes = {
 95: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Onix-s.png",
 96: "Whos_That_Pokemon-main\Pokemon Silhouettes\Drowzee-s.png",
 97: "Whos_That_Pokemon-main\Pokemon Silhouettes\Hypno-s.png",
-98: "Whos_That_Pokemon-main\Pokemon Silhouettes\Drowzee-s.png",
-99: "Whos_That_Pokemon-main\Pokemon Silhouettes\Hypno-s.png",
+98: "Whos_That_Pokemon-main\Pokemon Silhouettes\Krabby-s.png",
+99: "Whos_That_Pokemon-main\Pokemon Silhouettes\Kingler-s.png",
 100: "Whos_That_Pokemon-main\Pokemon Silhouettes 2\Voltorb-s.png",
 101: "Whos_That_Pokemon-main\Pokemon Silhouettes\Electrode-s.png",
 102: "Whos_That_Pokemon-main\Pokemon Silhouettes\Exeggcute-s.png",
@@ -388,7 +388,7 @@ def generator():
     imp = pg.image.load(pokemon_silhoettes[to_display])
     screen.blit(imp, (0,0))
     for x in range (3): #generates the other answer choices
-        rn = rand.randint(1,9)
+        rn = rand.randint(1,151)
         while (rn in used_names):
             rn = rand.randint(1,151)
         option_number = option_generator()
